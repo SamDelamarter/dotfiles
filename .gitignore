@@ -1,1 +1,8 @@
 tags
+.netrwhist
+selected
+autoload/
+plugged/
+backup.vim
+ftplugin/
+session/

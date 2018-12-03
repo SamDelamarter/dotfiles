@@ -1,6 +1,10 @@
 # Path to your oh-my-zsh installation.
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export ZSH=~/.oh-my-zsh
-
+export TERM="xterm-256color"
+#eval "$(minishift oc-env)"
+#export HELM_HOST="$(minishift ip):$(oc get svc/tiller -o jsonpath='{.spec.ports[0].nodePort}' -n kube-system --as=system:admin)"
+#export MINISHIFT_ADMIN_CONTEXT="default/$(oc config view -o jsonpath='{.contexts[?(@.name=="minishift")].context.cluster}')/system:admin"
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -55,7 +59,7 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 #POWERLEVEL9K_CUSTOM_WIFI_SIGNAL_BACKGROUND="235"
 
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator host dir_writable dir vcs)
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(host dir_writable dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir_writable dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time background_jobs ssh status time)
 
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh context root_indicator time_joined dir_joined dir_writable_joined vcs)
@@ -89,7 +93,8 @@ POWERLEVEL9K_STATUS_OK_FOREGROUND="green"
 POWERLEVEL9K_STATUS_ERROR_BACKGROUND="235"
 POWERLEVEL9K_STATUS_ERROR_FOREGROUND="red"
 
-POWERLEVEL9K_TIME_FORMAT="%D{\uf017 %T}" #  15:29:33
+# POWERLEVEL9K_TIME_FORMAT="%D{\uf017 %T}" #  15:29:33
+POWERLEVEL9K_TIME_FORMAT="%T" #  15:29:33
 POWERLEVEL9K_TIME_FOREGROUND="cyan"
 POWERLEVEL9K_TIME_BACKGROUND="235"
 
@@ -169,15 +174,17 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode mvn history brew wd)
+plugins=(git git-extras iterm2 vi-mode mvn history brew wd)
 
 # User configuration
+export PATH="/bin:/opt/spectrum_health/homeBin:/opt/spectrum_health/homeBin/ignore_dir:/bin:/opt/spectrum_health/homeBin:/opt/spectrum_health/homeBin/ignore_dir:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/go/bin:/opt/spectrum_health/homebin:/usr/local/bin/git"
 export PATH=$PATH:/Users/dan90374/code/protoc/bin
 export PATH=$PATH:$GOBIN
 source $ZSH/oh-my-zsh.sh
 
-export GOBIN=$(go env GOROOT)/bin
 export GOPATH=~/code/gowork
+export GOBIN=$GOPATH/bin
+
 
 
 # You may need to manually set your language environment
@@ -185,6 +192,8 @@ export GOPATH=~/code/gowork
 
 # Preferred editor for local and remote sessions
 export EDITOR='nvim'
+
+export USER_NAME=dan90374
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -199,24 +208,18 @@ export EDITOR='nvim'
 #
 # Example aliases
 alias zshconfig="nvim ~/.zshrc"
-alias d2mk="eval $(minikube docker-env)"
+alias vimconfig="nvim ~/.config/nvim/init.vim"
 alias td="todoist"
+alias tmux="tmux -2"
 #alias wg="cd /opt/spectrumhealth"
 #alias fn="find . -name $1"
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="/usr/local/sbin:$PATH"
+export JIRA_URL="https://jira.internal.priority-health.com"
+export JIRA_NAME=$USER_NAME
+export JIRA_BRANCH_REGEX="s/.+\/([A-Z0-9]+-[0-9]+)/\1/p"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f /Users/dan90374/Downloads/google-cloud-sdk/path.zsh.inc ]; then
-  source '/Users/dan90374/Downloads/google-cloud-sdk/path.zsh.inc'
-fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f /Users/dan90374/Downloads/google-cloud-sdk/completion.zsh.inc ]; then
-  source '/Users/dan90374/Downloads/google-cloud-sdk/completion.zsh.inc'
-fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
