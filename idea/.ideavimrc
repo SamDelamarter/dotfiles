@@ -4,9 +4,10 @@ let mapleader=','
 :map <Leader>e :action GotoClass<CR>
 :map <Leader>r :action Refactorings.QuickListPopupAction<CR>
 :map <Leader>ac :action ShowIntentionActions<CR>
-:map <Leader>gi :action GotoImplementation<CR>
-:map <Leader>gr :action FindUsages<CR>
+:map gi :action GotoImplementation<CR>
+:map gr :action FindUsages<CR>
 :map <Leader>K :action QuickJavaDoc<CR>
+:map <Leader>f :action ReformatCode<CR>
 :map gc :action CommentByLineComment<CR>
 :map <Leader>m :action ToggleLineBreakpoint<CR>
 :map <Leader>d :action Debug<CR>
