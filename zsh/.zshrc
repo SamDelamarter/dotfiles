@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export JAVA_HOME=`/usr/libexec/java_home`
 export ZSH=~/.oh-my-zsh
 export TERM="xterm-256color"
 #eval "$(minishift oc-env)"
@@ -211,6 +211,8 @@ alias zshconfig="nvim ~/.zshrc"
 alias vimconfig="nvim ~/.config/nvim/init.vim"
 alias td="todoist"
 alias tmux="tmux -2"
+alias ong="oc login https://openshift.ong.spectrum-health.org -u=dan90374"
+alias ms="oc login $(minishift ip):8443 -u=admin -p=admin"
 #alias wg="cd /opt/spectrumhealth"
 #alias fn="find . -name $1"
 
