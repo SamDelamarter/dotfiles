@@ -1,5 +1,6 @@
 let mapleader=','
 
+"" Intellij Specific Actions
 :map <Leader>e :action GotoClass<CR>
 :map <Leader>r :action Refactorings.QuickListPopupAction<CR>
 :map <Leader>ac :action ShowIntentionActions<CR>
@@ -7,16 +8,20 @@ let mapleader=','
 :map <Leader>gr :action FindUsages<CR>
 :map <Leader>K :action QuickJavaDoc<CR>
 :map gc :action CommentByLineComment<CR>
+:map <Leader>m :action ToggleLineBreakpoint<CR>
+:map <Leader>d :action Debug<CR>
+:map <Leader>r :action Run<CR>
+:map <Leader>b :action Compile<CR>
 
 "" Split
 noremap <Leader>h :<C-u>split<CR>
 noremap <Leader>v :<C-u>vsplit<CR>
 
-"" Buffer nav
+"" Tab navigation
 noremap <leader>q gT
 noremap <leader>w gt
 
-"" Close buffer
+"" Close Tab
 noremap <leader>c :q<CR>
 
 "" Switching windows
@@ -33,8 +38,3 @@ vmap > >gv
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
-
-:map <Leader>m :action ToggleLineBreakpoint<CR>
-:map <Leader>d :action Debug<CR>
-:map <Leader>r :action Run<CR>
-:map <Leader>b :action Compile<CR>
