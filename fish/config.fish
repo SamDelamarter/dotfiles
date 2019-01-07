@@ -28,3 +28,5 @@ alias fishconfig="nvim ~/dotfiles/fish/config.fish"
 # Maven aliases
 alias mvnci="mvn clean install"
 alias mvncist="mvn clean install -DskipTests"
+alias wg="cd ~/git"
+alias skynet="cd ~/git/skynet"
