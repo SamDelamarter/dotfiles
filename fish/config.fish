@@ -1,3 +1,9 @@
+# Environment
+set PATH $PATH ~/git/homebin
+set JAVA_HOME (/usr/libexec/java_home -v '1.8*')
+
+
+
 # BobTheFish Configs
 set -g theme_nerd_fonts yes
 #set -g theme_display_k8s_context yes
@@ -18,4 +24,7 @@ alias amq-stop="docker stop local_amq"
 alias amq-rm="docker rm local_amq"
 # you can hit the console on http://localhost:8161/admin
 # admin/admin to login
-
+alias fishconfig="nvim ~/dotfiles/fish/config.fish"
+# Maven aliases
+alias mvnci="mvn clean install"
+alias mvncist="mvn clean install -DskipTests"
