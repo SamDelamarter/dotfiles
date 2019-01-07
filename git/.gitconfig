@@ -1,0 +1,16 @@
+[user]
+	name = danmikita
+	email = danmikita@gmail.com
+[core]
+	editor = nvim
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = auto
+[alias]
+	st = status
+	co = checkout
+	br = branch -v
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(red)<%an>%Creset' --abbrev-commit --date=local
