@@ -78,4 +78,3 @@ cask "java"
 cask "intellij-idea-ce"
 cask "minikube"
 cask "minishift"
-mas "Todoist", id: 585829637
