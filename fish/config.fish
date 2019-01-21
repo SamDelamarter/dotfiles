@@ -1,7 +1,7 @@
 # Environment
 set PATH $PATH ~/git/homebin
 set JAVA_HOME (/usr/libexec/java_home -v '1.8*')
-
+set GOPATH ~/go
 
 
 # BobTheFish Configs
@@ -17,6 +17,7 @@ fish_vi_key_bindings
 
 # Aliases
 alias ong="oc login https://openshift.ong.spectrum-health.org -u=dan90374"
+alias onb="oc login https://openshift.onb.spectrum-health.org -u=dan90374"
 alias ms="oc login (minishift ip):8443 -u=admin -p=admin"
 alias amq-run="docker run -d --name local_amq  -p 61616:61616 -p 8161:8161 rmohr/activemq"
 alias amq-start="docker start local_amq"
@@ -30,3 +31,5 @@ alias mvnci="mvn clean install"
 alias mvncist="mvn clean install -DskipTests"
 alias wg="cd ~/git"
 alias skynet="cd ~/git/skynet"
+alias todos="cd ~/git/todos"
+alias go-furl="cd ~/go/src/github.com/danmikita/furl"
