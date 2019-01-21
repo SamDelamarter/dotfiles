@@ -1,5 +1,6 @@
 # Environment
 set PATH $PATH ~/git/homebin
+set EDITOR nvim
 set JAVA_HOME (/usr/libexec/java_home -v '1.8*')
 set GOPATH ~/go
 
@@ -16,6 +17,8 @@ set -g theme_display_vi yes
 fish_vi_key_bindings
 
 # Aliases
+alias javals="bash /Users/dan90374/dotfiles/nvim/jdtls" 
+alias refresh="source ~/dotfiles/fish/config.fish"
 alias ong="oc login https://openshift.ong.spectrum-health.org -u=dan90374"
 alias onb="oc login https://openshift.onb.spectrum-health.org -u=dan90374"
 alias ms="oc login (minishift ip):8443 -u=admin -p=admin"
