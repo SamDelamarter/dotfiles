@@ -1,37 +1,38 @@
-# Environment
+# # # # # # # # # # # # # # # # # # # # # # # # #
+# Environment variables
+# # # # # # # # # # # # # # # # # # # # # # # # #
 set PATH $PATH ~/git/homebin
 set EDITOR nvim
-set JAVA_HOME (/usr/libexec/java_home -v '1.8*')
+set JAVA_HOME (/usr/libexec/java_home -v 1.8.0_202)
 set GOPATH ~/go
 
-
+# # # # # # # # # # # # # # # # # # # # # # # # #
 # BobTheFish Configs
+# # # # # # # # # # # # # # # # # # # # # # # # #
 set -g theme_nerd_fonts yes
-#set -g theme_display_k8s_context yes
-#set -g theme_display_docker_machine yes
+set -g theme_display_k8s_context yes
 set -g theme_color_scheme solarized-dark
 set -g theme_display_vi yes
-#set -g theme_newline_cursor yes
 
+# # # # # # # # # # # # # # # # # # # # # # # # #
 # Standard settings
+# # # # # # # # # # # # # # # # # # # # # # # # #
 fish_vi_key_bindings
 
+# # # # # # # # # # # # # # # # # # # # # # # # #
 # Aliases
-alias javals="bash /Users/dan90374/dotfiles/nvim/jdtls" 
+# # # # # # # # # # # # # # # # # # # # # # # # #
 alias refresh="source ~/dotfiles/fish/config.fish"
 alias ong="oc login https://openshift.ong.spectrum-health.org -u=dan90374"
 alias onb="oc login https://openshift.onb.spectrum-health.org -u=dan90374"
 alias ms="oc login (minishift ip):8443 -u=admin -p=admin"
-alias amq-run="docker run -d --name local_amq  -p 61616:61616 -p 8161:8161 rmohr/activemq"
-alias amq-start="docker start local_amq"
-alias amq-stop="docker stop local_amq"
-alias amq-rm="docker rm local_amq"
-# you can hit the console on http://localhost:8161/admin
-# admin/admin to login
 alias fishconfig="nvim ~/dotfiles/fish/config.fish"
+
 # Maven aliases
 alias mvnci="mvn clean install"
 alias mvncist="mvn clean install -DskipTests"
+
+# Directory aliases
 alias wg="cd ~/git"
 alias skynet="cd ~/git/skynet"
 alias todos="cd ~/git/todos"
