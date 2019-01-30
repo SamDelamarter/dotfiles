@@ -1,7 +1,7 @@
 # # # # # # # # # # # # # # # # # # # # # # # # #
 # Environment variables
 # # # # # # # # # # # # # # # # # # # # # # # # #
-set PATH $PATH ~/code/bin ~/code/bin/homebin
+set PATH $PATH ~/code/bin ~/code/bin/homebin ~/code/bin/OJDBC-Full
 set EDITOR nvim
 set JAVA_HOME (/usr/libexec/java_home -v 1.8.0_202)
 set GOPATH ~/code/
@@ -27,3 +27,5 @@ source ~/dotfiles/scripts/alias.sh
 # External Sources
 # # # # # # # # # # # # # # # # # # # # # # # # #
 # source ~/code/src/github.com/troyxmccall/wd/wd
+source ~/dotfiles/scripts/alias.sh
+# source ~/dotfiles/scripts/my_functions.sh

@@ -1,0 +1,17 @@
+*~
+.*.swp
+.DS_Store
+.idea
+.project
+*.iml
+target/
+*.lock
+tags
+.netrwhist
+selected
+autoload/
+plugged/
+backup.vim
+ftplugin/
+session/
+.factorypath

@@ -1,8 +1,9 @@
 [user]
-	name = samdelamarter
+	name = Sam Delamarter
 	email = sam.delamarter@gmail.com
 [core]
 	editor = nvim
+	excludesFile = ~/dotfiles/git/.gitignore_global
 [mergetool]
     prompt = false
 [merge]
@@ -26,3 +27,5 @@
 	co = checkout
 	br = branch -v
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(red)<%an>%Creset' --abbrev-commit --date=local
+[includeIf "gitdir/i:~/code/src/bitbucket.spectrum-health.org/"]
+	path = ~/dotfiles/git/.gitconfig-work
