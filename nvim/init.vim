@@ -209,18 +209,6 @@ if exists("*fugitive#statusline")
   set statusline+=%{fugitive#statusline()}
 endif
 
-" vim-airline
-let g:airline_theme = 'solarized'
-let g:airline_solarized_bg='dark'
-let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tagbar#enabled = 1
-let g:airline_skip_empty_sections = 1
-" if you want to disable auto detect, comment out those two lines
-" let g:airline#extensions#disable_rtp_load = 1
-" let g:airline_extensions = ['branch', 'hunks', 'coc', 'tabline', 'tagbar']
-let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
-let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
 
 "*****************************************************************************
 "" Abbreviations
@@ -562,15 +550,26 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " **********************************************************************
 " vim-airline
 " **********************************************************************
+let g:airline_theme = 'solarized'
+let g:airline_solarized_bg='dark'
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tagbar#enabled = 1
+let g:airline_skip_empty_sections = 1
+" if you want to disable auto detect, comment out those two lines
+" let g:airline#extensions#disable_rtp_load = 1
+" let g:airline_extensions = ['branch', 'hunks', 'coc', 'tabline', 'tagbar']
+let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
+let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 
-let g:airline#extensions#tabline#left_sep = ''
+" let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline_left_sep = ''
+" let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
+" let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
