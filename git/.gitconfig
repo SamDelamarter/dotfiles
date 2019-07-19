@@ -3,6 +3,7 @@
 	email = danmikita@gmail.com
 [core]
 	editor = nvim
+	excludesfile = /Users/dmikita/.gitignore
 [mergetool]
     prompt = false
 [merge]
