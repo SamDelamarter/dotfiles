@@ -15,3 +15,5 @@ backup.vim
 ftplugin/
 session/
 .factorypath
+.settings
+.classpath

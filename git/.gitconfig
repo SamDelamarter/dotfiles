@@ -29,3 +29,5 @@
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(red)<%an>%Creset' --abbrev-commit --date=local
 [includeIf "gitdir/i:~/code/src/bitbucket.spectrum-health.org/"]
 	path = ~/dotfiles/git/.gitconfig-work
+[includeIf "gitdir/i:~/code/config/sh/"]
+	path = ~/dotfiles/git/.gitconfig-work

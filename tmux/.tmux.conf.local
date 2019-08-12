@@ -3,6 +3,9 @@
 #         without any warranty.
 #         Copyright 2012— Gregory Pakosz (@gpakosz).
 
+# -- tmux-ressurection ---------------------------------------------------------
+run-shell /Users/sam99676/code/src/github.com/tmux-plugins/tmux-resurrect/resurrect.tmux
+
 
 # -- navigation ----------------------------------------------------------------
 
