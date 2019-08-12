@@ -6,3 +6,4 @@ plugged/
 backup.vim
 ftplugin/
 session/
+swap_pane
