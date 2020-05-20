@@ -1,6 +1,6 @@
 [user]
-	name = danmikita
-	email = danmikita@gmail.com
+	name = Dan Mikita
+	email = dmikita@deltadentalmi.com
 [core]
 	editor = nvim
 	excludesfile = /Users/dmikita/.gitignore

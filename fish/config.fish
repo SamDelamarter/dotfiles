@@ -5,6 +5,7 @@ set PATH $PATH ~/git/homebin ~/go/bin
 set EDITOR nvim
 # set JAVA_HOME (/usr/libexec/java_home -v 1.8.0_202)
 set -x -U GOPATH ~/go
+set GOPROXY "https://dmikita:AKCp5dKPUL214Ww16yaNXoP5h2yG5fd5urRoLKshjLnXYJg2bf4AarjifJAaEUNu6sz93wwTo@artifactory.renhsc.com/artifactory/api/go/go-virtual"
 
 # # # # # # # # # # # # # # # # # # # # # # # # #
 # BobTheFish Configs
@@ -31,6 +32,8 @@ alias fishconfig="nvim ~/dotfiles/fish/config.fish"
 alias vimconfig="nvim ~/dotfiles/nvim/init.vim"
 # alias diff="git difftool"
 alias vim="nvim"
+alias yv="nvim - -c'set ft=yaml'"
+alias yb="bat -lyaml"
 
 alias fzfcmd="fzf --ansi -i -1 --height=50% --reverse -0 --inline-info --border"
 
@@ -45,6 +48,9 @@ alias skynet="cd ~/git/skynet"
 alias todos="cd ~/git/todos"
 alias go-furl="cd ~/go/src/github.com/danmikita/furl"
 alias jenk="ssh -t dmikita@rhokvtstdmsk01 'sudo su -'"
+alias os="~/git/openstack-ci/bin/startOpenStackTools.sh"
+alias lcp="sh ~/git/openstack-ci/bin/localKubeConfig.sh"
+alias fix="open smb://ddmi.intra.renhsc.com/DeptData"
 
 function fco -d "Fuzzy-find and checkout a branch"
   git branch --all | grep -v HEAD | string trim | fzfcmd | read -l result; and git checkout "$result"
