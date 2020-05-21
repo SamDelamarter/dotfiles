@@ -5,7 +5,6 @@ set PATH $PATH ~/git/homebin ~/go/bin
 set EDITOR nvim
 # set JAVA_HOME (/usr/libexec/java_home -v 1.8.0_202)
 set -x -U GOPATH ~/go
-set GOPROXY "https://dmikita:AKCp5dKPUL214Ww16yaNXoP5h2yG5fd5urRoLKshjLnXYJg2bf4AarjifJAaEUNu6sz93wwTo@artifactory.renhsc.com/artifactory/api/go/go-virtual"
 
 # # # # # # # # # # # # # # # # # # # # # # # # #
 # BobTheFish Configs
