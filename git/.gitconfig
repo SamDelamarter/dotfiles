@@ -3,7 +3,7 @@
 	email = sam.delamarter@gmail.com
 [core]
 	editor = nvim
-	excludesfile = /Users/dmikita/.gitignore
+	excludesfile = ~/.gitignore
 [mergetool]
     prompt = false
 [merge]
