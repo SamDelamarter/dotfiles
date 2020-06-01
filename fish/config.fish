@@ -23,16 +23,33 @@ fish_vi_key_bindings
 # # # # # # # # # # # # # # # # # # # # # # # # #
 source ~/dotfiles/scripts/alias.sh
 
-# # # # # # # # # # # # # # # # # # # # # # # # #
-# External Sources
-# # # # # # # # # # # # # # # # # # # # # # # # #
-# source ~/code/src/github.com/troyxmccall/wd/wd
-# source ~/dotfiles/scripts/my_functions.sh
+alias refresh="source ~/dotfiles/fish/config.fish"
+# alias osb="oc login https://openshift.osb.spectrum-health.org -u=$USER"
+# alias onb="oc login https://openshift.onb.spectrum-health.org -u=$USER"
+# alias os="oc login https://openshift-nonprod.spectrum-health.org -u=$USER"
+# alias osp="oc login https://openshift.spectrum-health.org -u=$USER"
+alias ms="oc login (minishift ip):8443 -u=admin -p=admin"
+alias fishconfig="nvim ~/dotfiles/fish/config.fish"
+alias vimconfig="nvim ~/dotfiles/nvim/init.vim"
+# alias diff="git difftool"
+alias vim="nvim"
+alias yv="nvim - -c'set ft=yaml'"
+alias yb="bat -lyaml"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/sam99676/Downloads/google-cloud-sdk 2/path.fish.inc' ]; . '/Users/sam99676/Downloads/google-cloud-sdk 2/path.fish.inc'; end
 
 alias fzfcmd="fzf --ansi -i -1 --height=50% --reverse -0 --inline-info --border"
+# Directory aliases
+alias dotfiles="~/dotfiles"
+alias wg="cd ~/git"
+alias skynet="cd ~/git/skynet"
+alias todos="cd ~/git/todos"
+alias go-furl="cd ~/go/src/github.com/danmikita/furl"
+alias jenk="ssh -t dmikita@rhokvtstdmsk01 'sudo su -'"
+alias os="~/git/openstack-ci/bin/startOpenStackTools.sh"
+alias lcp="sh ~/git/openstack-ci/bin/localKubeConfig.sh"
+alias fix="open smb://ddmi.intra.renhsc.com/DeptData"
 
 function fco -d "Fuzzy-find and checkout a branch"
   git branch --all | grep -v HEAD | string trim | fzfcmd | read -l result; and git checkout "$result"
