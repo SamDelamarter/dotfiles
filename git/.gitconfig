@@ -31,3 +31,7 @@
 	path = ~/dotfiles/git/.gitconfig-work
 [includeIf "gitdir/i:~/code/config/sh/"]
 	path = ~/dotfiles/git/.gitconfig-work
+[init]
+	templatedir = ~/.git-templates
+[pull]
+	ff = only

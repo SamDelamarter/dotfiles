@@ -28,6 +28,12 @@ alias postgres-start="docker start postgres_db"
 alias postgres-stop="docker stop postgres_db"
 alias postgres-rm="docker rm postgres_db"
 
+# Sql Server
+alias sqlserver-run="docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Go0dPassword' -d --name sqlserver_db -p 1433:1433 mcr.microsoft.com/mssql/server:2017-latest"
+alias sqlserver-start="docker start sqlserver_db"
+alias sqlserver-stop="docker stop sqlserver_db"
+alias sqlserver-rm="docker rm sqlserver_db"
+
 # Kubernetes
 alias kd='kubectl describe'
 
@@ -44,7 +50,7 @@ alias kgctx='kubectl config get-contexts'
 alias ms='minishift'
 alias ms-login='oc login (minishift ip):8443 -u=admin -p=admin'
 alias ocp-login='oc login https://openshift.spectrum-health.org -u=$USER'
-alias ocnp-login='oc login https://openshift-nonprod.spectrum-health.org:443 -u=$USER'
+alias ocnp-login='oc login https://api.on.spectrum-health.org:6443 -u=$USER'
 
 # mvn
 alias mvnci='mvn clean install'
