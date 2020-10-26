@@ -1,7 +1,7 @@
 # # # # # # # # # # # # # # # # # # # # # # # # #
 # Environment variables
 # # # # # # # # # # # # # # # # # # # # # # # # #
-set PATH $PATH ~/code/bin ~/code/bin/homebin ~/code/bin/OJDBC-Full
+set PATH $PATH ~/code/bin ~/code/bin/homebin ~/code/bin/OJDBC-Full /Library/Frameworks/Python.framework/Versions/3.9/bin/
 set EDITOR nvim
 set JAVA_HOME (/usr/libexec/java_home -v 1.8)
 set -x -U GOPATH "/Users/sam99676/code/"
@@ -21,7 +21,7 @@ fish_vi_key_bindings
 # # # # # # # # # # # # # # # # # # # # # # # # #
 # Aliases
 # # # # # # # # # # # # # # # # # # # # # # # # #
-source ~/dotfiles/scripts/alias.sh
+source ~/git/dotfiles/scripts/alias.sh
 
 alias refresh="source ~/dotfiles/fish/config.fish"
 # alias osb="oc login https://openshift.osb.spectrum-health.org -u=$USER"
@@ -67,3 +67,6 @@ function fh -d "Fuzzy-find ssh host via ag and ssh into it"
   history | fzfcmd | read -l result
   commandline -r $result
 end
+
+#scrolling:
+#  faux_multiplier: 0
