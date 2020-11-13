@@ -1,7 +1,7 @@
 # # # # # # # # # # # # # # # # # # # # # # # # #
 # Environment variables
 # # # # # # # # # # # # # # # # # # # # # # # # #
-set PATH $PATH ~/code/bin ~/code/bin/homebin ~/code/bin/OJDBC-Full /Library/Frameworks/Python.framework/Versions/3.9/bin/
+set PATH $PATH ~/code/bin ~/code/bin/homebin ~/code/bin/OJDBC-Full /Library/Frameworks/Python.framework/Versions/3.9/bin/ ~/Library/Python/3.8/bin/
 set EDITOR nvim
 set JAVA_HOME (/usr/libexec/java_home -v 1.8)
 set -x -U GOPATH "/Users/sam99676/code/"
@@ -23,18 +23,6 @@ fish_vi_key_bindings
 # # # # # # # # # # # # # # # # # # # # # # # # #
 source ~/git/dotfiles/scripts/alias.sh
 
-alias refresh="source ~/dotfiles/fish/config.fish"
-# alias osb="oc login https://openshift.osb.spectrum-health.org -u=$USER"
-# alias onb="oc login https://openshift.onb.spectrum-health.org -u=$USER"
-# alias os="oc login https://openshift-nonprod.spectrum-health.org -u=$USER"
-# alias osp="oc login https://openshift.spectrum-health.org -u=$USER"
-alias ms="oc login (minishift ip):8443 -u=admin -p=admin"
-alias fishconfig="nvim ~/dotfiles/fish/config.fish"
-alias vimconfig="nvim ~/dotfiles/nvim/init.vim"
-# alias diff="git difftool"
-alias vim="nvim"
-alias yv="nvim - -c'set ft=yaml'"
-alias yb="bat -lyaml"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/sam99676/Downloads/google-cloud-sdk 2/path.fish.inc' ]; . '/Users/sam99676/Downloads/google-cloud-sdk 2/path.fish.inc'; end

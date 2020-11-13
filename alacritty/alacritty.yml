@@ -155,7 +155,7 @@ colors:
   #indexed_colors:
   #  - { index: 16, color: '0x000000' }
 
-# Visual Bell
+# Bell
 #
 # Any time the BEL code is received, Alacritty "rings" the visual bell. Once
 # rung, the terminal background will be set to white and transition back to the
@@ -176,7 +176,7 @@ colors:
 #   - Linear
 #
 # Specifying a `duration` of `0` will disable the visual bell.
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 0
 

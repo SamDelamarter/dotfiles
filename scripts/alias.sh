@@ -4,8 +4,12 @@
 alias nvimconfig='nvim ~/dotfiles/nvim/init.vim'
 alias dotfiles='nvim ~/dotfiles'
 alias fishrl='source ~/.config/fish/config.fish'
-
-alias f='~/code/bin/homebin/furl'
+alias fishconfig="nvim ~/dotfiles/fish/config.fish"
+alias vimconfig="nvim ~/dotfiles/nvim/init.vim"
+# alias diff="git difftool"
+alias vim="nvim"
+alias yv="nvim - -c'set ft=yaml'"
+alias yb="bat -lyaml"
 
 # AMQ
 alias amq-rm='docker rm local_amq'
