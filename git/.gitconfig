@@ -3,7 +3,7 @@
 	email = sam.delamarter@gmail.com
 [core]
 	editor = nvim
-	excludesFile = ~/dotfiles/git/.gitignore_global
+	excludesFile = ~/git/dotfiles/git/.gitignore_global
 [mergetool]
     prompt = false
 [merge]
@@ -33,5 +33,6 @@
 	path = ~/dotfiles/git/.gitconfig-work
 [init]
 	templatedir = ~/.git-templates
+	defaultBranch = main
 [pull]
 	ff = only

@@ -78,7 +78,7 @@ alias gr='git rebase -i'
 alias gp='git push'
 
 # Applications
-alias intellij='open -a /Users/sam99676/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/191.7479.19/IntelliJ\ IDEA.app'
+# alias intellij='open -a /Users/sam99676/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/191.7479.19/IntelliJ\ IDEA.app'
 
 # warp directories
 alias wg='cd ~/code/src/bitbucket.spectrum-health.org'
@@ -89,7 +89,7 @@ alias soa-archs='cd ~/code/src/bitbucket.spectrum-health.org/soa-archetypes'
 alias soa-common='cd ~/code/src/bitbucket.spectrum-health.org/soa-common'
 alias c='clear'
 
-alias encounter='cd /Users/sam99676/code/src/bitbucket.spectrum-health.org/encounter'
+# alias encounter='cd /Users/sam99676/code/src/bitbucket.spectrum-health.org/encounter'
 alias ocl-login='oc login (minishift ip):8443'
-alias event-common='cd /Users/sam99676/code/src/bitbucket.spectrum-health.org/event-common'
+# alias event-common='cd /Users/sam99676/code/src/bitbucket.spectrum-health.org/event-common'
 alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"

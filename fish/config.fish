@@ -1,10 +1,11 @@
 # # # # # # # # # # # # # # # # # # # # # # # # #
 # Environment variables
 # # # # # # # # # # # # # # # # # # # # # # # # #
-set PATH $PATH ~/code/bin ~/code/bin/homebin ~/code/bin/OJDBC-Full /Library/Frameworks/Python.framework/Versions/3.9/bin/ ~/Library/Python/3.8/bin/
+set PATH $PATH ~/code/bin ~/code/bin/homebin ~/code/bin/OJDBC-Full /Library/Frameworks/Python.framework/Versions/3.9/bin/ ~/Library/Python/3.8/bin/ /usr/local/go/bin/
+set -gx PATH $PATH $HOME/.krew/bin
 set EDITOR nvim
-set JAVA_HOME (/usr/libexec/java_home -v 1.8)
-set -x -U GOPATH "/Users/sam99676/code/"
+set JAVA_HOME (/usr/libexec/java_home)
+set -x -U GOPATH "/Users/$USER/git/"
 
 # # # # # # # # # # # # # # # # # # # # # # # # #
 # BobTheFish Configs
@@ -23,18 +24,11 @@ fish_vi_key_bindings
 # # # # # # # # # # # # # # # # # # # # # # # # #
 source ~/git/dotfiles/scripts/alias.sh
 
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/sam99676/Downloads/google-cloud-sdk 2/path.fish.inc' ]; . '/Users/sam99676/Downloads/google-cloud-sdk 2/path.fish.inc'; end
-
 alias fzfcmd="fzf --ansi -i -1 --height=50% --reverse -0 --inline-info --border"
 # Directory aliases
-alias dotfiles="~/dotfiles"
+alias dotfiles="cd ~/git/dotfiles"
 alias wg="cd ~/git"
-alias skynet="cd ~/git/skynet"
-alias todos="cd ~/git/todos"
 alias go-furl="cd ~/go/src/github.com/danmikita/furl"
-alias jenk="ssh -t dmikita@rhokvtstdmsk01 'sudo su -'"
 alias os="~/git/openstack-ci/bin/startOpenStackTools.sh"
 alias lcp="sh ~/git/openstack-ci/bin/localKubeConfig.sh"
 alias fix="open smb://ddmi.intra.renhsc.com/DeptData"
@@ -58,3 +52,4 @@ end
 
 #scrolling:
 #  faux_multiplier: 0
+set -g fish_user_paths "/usr/local/opt/mysql-client/bin" $fish_user_paths
