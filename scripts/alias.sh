@@ -50,12 +50,6 @@ alias kctx='kubectl config current-context'
 alias kcon='kubectl config use-context'
 alias kgctx='kubectl config get-contexts'
 
-# Openshift
-alias ms='minishift'
-alias ms-login='oc login (minishift ip):8443 -u=admin -p=admin'
-alias ocp-login='oc login https://openshift.spectrum-health.org -u=$USER'
-alias ocnp-login='oc login https://api.on.spectrum-health.org:6443 -u=$USER'
-
 # mvn
 alias mvnci='mvn clean install'
 alias mvncist='mvn clean install -DskipTests'
@@ -77,19 +71,7 @@ alias gbl='git blame -b -w'
 alias gr='git rebase -i'
 alias gp='git push'
 
-# Applications
-# alias intellij='open -a /Users/sam99676/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/191.7479.19/IntelliJ\ IDEA.app'
-
-# warp directories
-alias wg='cd ~/code/src/bitbucket.spectrum-health.org'
-alias message='cd ~/code/src/bitbucket.spectrum-health.org/message'
-alias message-batch='cd ~/code/src/bitbucket.spectrum-health.org/message-batch'
-alias message-2='cd ~/code/src/bitbucket.spectrum-health.org/message-2'
-alias soa-archs='cd ~/code/src/bitbucket.spectrum-health.org/soa-archetypes'
-alias soa-common='cd ~/code/src/bitbucket.spectrum-health.org/soa-common'
+# Misc
 alias c='clear'
-
-# alias encounter='cd /Users/sam99676/code/src/bitbucket.spectrum-health.org/encounter'
-alias ocl-login='oc login (minishift ip):8443'
-# alias event-common='cd /Users/sam99676/code/src/bitbucket.spectrum-health.org/event-common'
 alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"
+# alias tmux='TERM=xterm-256color tmux'

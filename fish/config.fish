@@ -6,6 +6,7 @@ set -gx PATH $PATH $HOME/.krew/bin
 set EDITOR nvim
 set JAVA_HOME (/usr/libexec/java_home)
 set -x -U GOPATH "/Users/$USER/git/"
+set TERM xterm-256color
 
 # # # # # # # # # # # # # # # # # # # # # # # # #
 # BobTheFish Configs
